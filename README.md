@@ -8,11 +8,11 @@ Using the example on HiperGator
 -------------------------------
 
 1. Copy or clone this example to your `/blue` directory.
+1. Change your working directory to your version of the pytorch_distributed_template folder.
 1. Update job_launch.sh:
    1. Add SBATCH options job-name, mail-user, nodes, gpus-per-task, cpus-per-task, mem, time, and output. ntasks-per-node or nproc-per-node (in launch_node.sh) may need to be updated for some use cases.
    1. Add the path to your Python script as the command variable.
    1. Adjust the module load or use a path to a container for the appropriate software environment.
-1. Change your working directory to your version of the pytorch_distributed_template folder.
 1. Run `sbatch job_launch.sh` to submit this to the SLURM scheduler.
 
 
